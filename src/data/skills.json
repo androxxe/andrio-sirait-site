@@ -1,0 +1,82 @@
+{
+  "languages": [
+    {
+      "code": "ts",
+      "level": "Intermediate"
+    },
+    {
+      "code": "js",
+      "level": "Expert"
+    },
+    {
+      "code": "php",
+      "level": "Expert"
+    }
+  ],
+  "framework_or_library": [
+    {
+      "code": "react-native",
+      "level": "Expert"
+    },
+    {
+      "code": "react",
+      "level": "Expert"
+    },
+    {
+      "code": "nextjs",
+      "level": "Intermediate"
+    },
+    {
+      "code": "expressjs",
+      "level": "Intermediate"
+    },
+    {
+      "code": "laravel",
+      "level": "Expert"
+    },
+    {
+      "code": "ci",
+      "level": "Expert"
+    },
+    {
+      "code": "sass",
+      "level": "Intermediate"
+    },
+    {
+      "code": "tailwind",
+      "level": "Expert"
+    },
+    {
+      "code": "bootstrap",
+      "level": "Intermediate"
+    }
+  ],
+  "databases": [
+    {
+      "code": "mysql",
+      "level": "Expert"
+    },
+    {
+      "code": "postgresql",
+      "level": "Expert"
+    },
+    {
+      "code": "oracle",
+      "level": "Intermediate"
+    }
+  ],
+  "tools": [
+    {
+      "code": "vscode",
+      "level": "Expert"
+    },
+    {
+      "code": "git",
+      "level": "Expert"
+    },
+    {
+      "code": "docker",
+      "level": "Intermediate"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "company": "PT. Mitratech Indonesia",
+    "position": "Software Engineer",
+    "description": "Mitra Tech Indonesia is a Leading Solution Provider & System Integrator that Focuses on Providing Comprehensive Solution to the Client to Answer Business Needs & Operational Challenges.",
+    "working_date": [
+      {
+        "start_month": 11,
+        "start_year": 2022,
+        "end_month": null,
+        "end_year": null,
+        "status": "Full-Time"
+      }
+    ]
+  },
+  {
+    "company": "PT. Andomus Tech Universe",
+    "position": "React-Native Developer",
+    "description": "Andomus menghadirkan sebuah inovasi digital yang didesain untuk pemenangan pemilu legistatif, kepala daerah hingga kepala desa yang berbasis web dan mobile dan terintegrasi Sistem Infomasi Geografis dengan memberikan kepastian Satu NIK Satu Suara pada setiap level pemilihan sehingga data yang dihasilkan lebih objective dan akurat",
+    "working_date": [
+      {
+        "start_month": 11,
+        "start_year": 2022,
+        "end_month": null,
+        "end_year": null,
+        "status": "Seasonal"
+      }
+    ]
+  },
+  {
+    "company": "PT. Agritech Retail Indonesia",
+    "position": "Co-Founder WarungSegar",
+    "description": "WarungSegar is a StartUp based on Pekanbaru, Riau that focus to cut food products supply chain. we make fresh products, easy to get for you, directly from farmers",
+    "working_date": [
+      {
+        "start_month": 4,
+        "start_year": 2021,
+        "end_month": null,
+        "end_year": null,
+        "status": "Part-Time"
+      },
+      {
+        "start_month": 10,
+        "start_year": 2019,
+        "end_month": 4,
+        "end_year": 2021,
+        "status": "Full-Time"
+      }
+    ]
+  },
+  {
+    "company": "Nginvite.com",
+    "position": "Co-Founder",
+    "description": "Nginvite is StartUp based on Pekanbaru, Nginvite is an online invitation based on web application with self-service concept which allow user to create and choose design for their invitation. Nginvite have some invitation type such as wedding, meeting, informal and formal events",
+    "working_date": [
+      {
+        "start_month": 10,
+        "start_year": 2021,
+        "end_month": 11,
+        "end_year": 2022,
+        "status": "Part-Time"
+      }
+    ]
+  },
+  {
+    "company": "SiteMedia",
+    "position": "Full-stack Developer",
+    "description": "SiteMedia is a software house, accepts outsourcing of website, android and iOS application development. I work for some project on SiteMedia as fullstack developer",
+    "working_date": [
+      {
+        "start_month": 4,
+        "start_year": 2021,
+        "end_month": 11,
+        "end_year": 2022,
+        "status": "Full-Time"
+      }
+    ]
+  }
+]

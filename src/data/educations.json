@@ -1,0 +1,30 @@
+[
+  {
+    "start_year": 2016,
+    "end_year": 2022,
+    "school": "Riau University",
+    "degree": "Bachelor Degree",
+    "description": "Bachelor Degree of Informatics Engineering Department from Riau University. Graduated with 3.71 GPA"
+  },
+  {
+    "start_year": 2013,
+    "end_year": 2016,
+    "school": "SMA Plus Taruna Andalan",
+    "degree": "Senior High School",
+    "description": "Science major. Continue my interest into computer, won some blog design competition on provincial level. Also, start to learn a programming language with Pascal"
+  },
+  {
+    "start_year": 2010,
+    "end_year": 2013,
+    "school": "SMP Global Andalan",
+    "degree": "Junior High School",
+    "description": "Started liked in computer, tried graphic design. Made a lot of projects in graphic design and video editing"
+  },
+  {
+    "start_year": 2007,
+    "end_year": 2010,
+    "school": "SD Global Andalan",
+    "degree": "Elementary School",
+    "description": "Take part in the provincial level math olympiad"
+  }
+]

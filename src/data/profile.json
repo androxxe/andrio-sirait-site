@@ -1,0 +1,24 @@
+{
+  "name": "Andrio Pratama Sirait",
+  "name_with_title": "Andrio Pratama Sirait, S.T",
+  "date_of_birth": "1998-09-07",
+  "role": "Full-stack Developer",
+  "about": "A professional full-stack developer from Pekanbaru, Indonesia. 3 years experienced working on StartUp. Working for more than 10+ project. Im having big passion on business to give good impact for others, coding & technology to solve problem and streamline things with code. I always give my best for each projects I did. I give a solution with my creative app.",
+  "resume_path": "/assets/CV-dan-Portolio-Andrio-Sirait - Jan 2023.pdf",
+  "photo_path": "/assets/images/foto-jas.png",
+  "phone": "+62812 2669 6696",
+  "email": "andriopratama16@gmail.com",
+  "website": "www.andriosirait.com",
+  "address": {
+    "street": "Jl. Taman Laguna",
+    "city": "Jakarta Timur, Indonesia",
+    "postal_code": "17435"
+  },
+  "hobbies": "Enjoy playing video games a little while to refresh myself from the exhausting coding. Also enjoy watching video on YouTube",
+  "social_media": {
+    "facebook": "https://www.facebook.com/yangngambiltaik/",
+    "instagram": "https://www.instagram.com/andrio.sirait/",
+    "linked_in": "https://www.linkedin.com/in/andrio-pratama-sirait-632223125/",
+    "github": "https://github.com/androxxe"
+  }
+}

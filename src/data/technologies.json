@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Website",
+    "logo_path": "",
+    "type": "platform",
+    "code": "web"
+  },
+  {
+    "name": "Android",
+    "logo_path": "",
+    "type": "platform",
+    "code": "android"
+  },
+  {
+    "name": "iOS",
+    "logo_path": "",
+    "type": "platform",
+    "code": "ios"
+  },
+  {
+    "name": "JavaScript",
+    "logo_path": "/assets/images/technology/javascript.png",
+    "type": "language",
+    "code": "js"
+  },
+  {
+    "name": "TypeScript",
+    "logo_path": "/assets/images/technology/typescript.png",
+    "type": "language",
+    "code": "ts"
+  },
+  {
+    "name": "PHP",
+    "logo_path": "/assets/images/technology/php.png",
+    "type": "language",
+    "code": "php"
+  },
+  {
+    "name": "React Native",
+    "logo_path": "/assets/images/technology/react-native.png",
+    "type": "framework",
+    "code": "react-native"
+  },
+  {
+    "name": "React.js",
+    "logo_path": "/assets/images/technology/react.png",
+    "type": "framework",
+    "code": "react"
+  },
+  {
+    "name": "Next.js",
+    "logo_path": "/assets/images/technology/next.png",
+    "type": "framework",
+    "code": "nextjs"
+  },
+  {
+    "name": "Express.js",
+    "logo_path": "/assets/images/technology/express.png",
+    "type": "framework",
+    "code": "expressjs"
+  },
+  {
+    "name": "Laravel",
+    "logo_path": "/assets/images/technology/laravel.png",
+    "type": "framework",
+    "code": "laravel"
+  },
+  {
+    "name": "CodeIgniter",
+    "logo_path": "/assets/images/technology/codeigniter.png",
+    "type": "framework",
+    "code": "ci"
+  },
+  {
+    "name": "Sass",
+    "logo_path": "/assets/images/technology/sass.png",
+    "type": "framework",
+    "code": "sass"
+  },
+  {
+    "name": "TailwindCSS",
+    "logo_path": "/assets/images/technology/tailwind.png",
+    "type": "framework",
+    "code": "tailwind"
+  },
+  {
+    "name": "Bootstrap",
+    "logo_path": "/assets/images/technology/bootstrap.png",
+    "type": "framework",
+    "code": "bootstrap"
+  },
+  {
+    "name": "MySQL",
+    "logo_path": "/assets/images/technology/mysql.png",
+    "type": "database",
+    "code": "mysql"
+  },
+  {
+    "name": "PostgreSQL",
+    "logo_path": "/assets/images/technology/postgres.png",
+    "type": "database",
+    "code": "postgresql"
+  },
+  {
+    "name": "Oracle",
+    "logo_path": "/assets/images/technology/oracle.png",
+    "type": "database",
+    "code": "oracle"
+  },
+  {
+    "name": "VSCode",
+    "logo_path": "/assets/images/technology/vscode.png",
+    "type": "tools",
+    "code": "vscode"
+  },
+  {
+    "name": "Git",
+    "logo_path": "/assets/images/technology/git.png",
+    "type": "tools",
+    "code": "git"
+  },
+  {
+    "name": "Docker",
+    "logo_path": "/assets/images/technology/docker.webp",
+    "type": "tools",
+    "code": "docker"
+  },
+  {
+    "name": "Unity",
+    "logo_path": "/assets/images/technology/unity.png",
+    "type": "tools",
+    "code": "unity"
+  }
+]
