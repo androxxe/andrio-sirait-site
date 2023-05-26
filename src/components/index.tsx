@@ -1,4 +1,4 @@
-import Profile from "./Profile";
+import SidebarProfile from "./SidebarProfile";
 import Menu from "./Menu";
 import Footer from "./Footer";
 import Template from "./Template";
@@ -7,9 +7,10 @@ import Skill from "./Skill";
 import Experience from "./Experience";
 import Title from "./typography/Title";
 import Education from "./Education";
+import Portfolio from "./Portfolio";
 
 export {
-  Profile,
+  SidebarProfile,
   Menu,
   Footer,
   Template,
@@ -18,4 +19,5 @@ export {
   Experience,
   Title,
   Education,
+  Portfolio,
 };

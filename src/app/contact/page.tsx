@@ -13,10 +13,10 @@ const Contact = () => {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -10, opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="flex items-center justify-center flex-col h-full my-10"
+          className="flex items-center justify-center flex-col h-full"
         >
           <Title>Contact</Title>
-          <div className="text-center">
+          <div className="text-center mb-20">
             <span className="block">{profile.address?.street}</span>
             <span className="block">{profile.address?.city}</span>
             <span className="block">{profile.address?.postal_code}</span>

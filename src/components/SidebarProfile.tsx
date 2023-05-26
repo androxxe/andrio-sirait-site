@@ -5,12 +5,12 @@ import { profile } from "@/data";
 const Profile: React.FC = () => {
   return (
     <div className="bg-primary-500 h-full w-full lg:w-2/5 rounded-tl-lg rounded-bl-lg rounded-tr-lg lg:rounded-tr-none relative">
-      {/* <div
+      <div
         className="h-[350px] lg:h-full w-full relative bg-contain bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${profile.photo_path})`,
         }}
-      ></div> */}
+      ></div>
       <div className="absolute bottom-0 p-5 text-white text-center w-full bg-primary-600 rounded-bl-lg">
         <h2 className="font-bold">{profile.name}</h2>
         <h2 className="text-sm font-light">{profile.role}</h2>

@@ -1,11 +1,16 @@
 "use client";
 
-import React, { useState } from "react";
-import { Template } from "@/components";
-import Image from "next/image";
-import { Gallery } from "react-grid-gallery";
+import React, { useEffect, useState } from "react";
+import { Template, Title } from "@/components";
 import { portfolios, profile, technologies } from "@/data";
-import { FaLock } from "react-icons/fa";
+import { FaChevronLeft, FaLock } from "react-icons/fa";
+import { useRouter } from "next/navigation";
+import Lightbox from "yet-another-react-lightbox";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import PhotoAlbum from "react-photo-album";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/captions.css";
+import { calculateImageHeight } from "@/helpers";
 
 type PortfolioDetailType = {
   params: {
@@ -13,109 +18,149 @@ type PortfolioDetailType = {
   };
 };
 
-const images = [
-  {
-    src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-    width: 320,
-    height: 174,
-    isSelected: true,
-    caption: "After Rain (Jeshu John - designerspics.com)",
-  },
-  {
-    src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-    width: 320,
-    height: 212,
-    tags: [
-      { value: "Ocean", title: "Ocean" },
-      { value: "People", title: "People" },
-    ],
-    alt: "Boats (Jeshu John - designerspics.com)",
-  },
-
-  {
-    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-    width: 320,
-    height: 212,
-  },
-];
+type ImageType = Array<{
+  src: string;
+  description?: string;
+  height: number;
+  width: number;
+}>;
 
 const PortfolioDetail = ({ params: { slug } }: PortfolioDetailType) => {
-  const portfolio = portfolios.find((item) => item.slug === slug);
+  const portfolio: any = portfolios.find((item) => item.slug === slug);
+
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [imageIndex, setImageIndex] = useState<number>(0);
+  const [images, setImages] = useState<ImageType>([]);
+
+  useEffect(() => {
+    (async () => {
+      const temp: any = await Promise.all<any>(
+        portfolio?.images.map(async (item: any) => {
+          const dimension = await calculateImageHeight(item.image);
+
+          return {
+            src: item.image,
+            description: item.caption,
+            height: dimension.height,
+            width: dimension.width,
+          };
+        })
+      );
+
+      setImages(temp);
+    })();
+  }, []);
+
+  const router = useRouter();
 
   return (
-    <Template menu="/portfolio">
-      <h2 className="text-sky-500 font-bold text-center text-xl mb-5 mt-5">
-        {portfolio?.name}
-      </h2>
-      <div className="text-center flex flex-wrap">
-        {/* {portfolio?.images.map((image, index) => (
-          <Image
-            src={image}
-            width={200}
-            height={400}
-            objectFit="contain"
-            alt={`Portfolio ${portfolio.name} - ${profile.name}`}
-          />
-        ))} */}
-      </div>
-      <Gallery images={images} />
-      <p className="mb-3 mt-10 text-justify">{portfolio?.description}</p>
-      <div className="grid grid-cols-1 sm:grid-cols-3 divide-x mt-5 mb-10">
-        <div className="p-3 px-5">
-          <p className="font-bold">Access:</p>
-          {portfolio?.access?.is_public == 1 ? (
-            portfolio.access.links.map((link) => (
-              <a
-                href={link.url}
-                className="text-sky-500 underline italic block"
-              >
-                {link.label}
-              </a>
-            ))
-          ) : (
-            <span className="flex items-center gap-x-2 italic">
-              <FaLock className="text-slate-300" />
-              Private Access
+    <>
+      <Template menu="/portfolio">
+        <a
+          href="#"
+          className="flex items-center space-x-2"
+          onClick={() => router.back()}
+        >
+          <FaChevronLeft />
+          <span>Back</span>
+        </a>
+        <Title>{portfolio?.name}</Title>
+        <PhotoAlbum
+          layout="rows"
+          targetRowHeight={400}
+          photos={images}
+          onClick={({ index }: { index: number }) => {
+            setImageIndex(index);
+            setIsOpen(true);
+          }}
+        />
+        <p className="my-10 text-justify">
+          {portfolio?.description ?? "No Description"}
+        </p>
+        <div className="space-x-2 mb-10">
+          {portfolio?.platform.map((platform: string, index: number) => (
+            <span
+              key={`portfolio_platform_${index}`}
+              className="bg-slate-200 px-3 text-slate-500 py-1 rounded-full font-bold"
+            >
+              {platform}
             </span>
-          )}
+          ))}
         </div>
-        <div className="p-3 px-5">
-          <p className="font-bold">Role:</p>
-          <p>{portfolio?.role}</p>
-        </div>
-        <div className="p-3 px-5">
-          <p className="font-bold">Technology:</p>
-          <div className="grid grid-cols-3 gap-3 mt-5">
-            {portfolio?.tech_stack.map((tech_stack, index) => {
-              const technology = technologies.find(
-                (item) => item.code === tech_stack
-              );
-              if (!technology) return null;
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:divide-x mt-5 mb-10">
+          <div className="py-3 lg:px-5">
+            <p className="font-bold">Access:</p>
+            {portfolio?.access?.is_public == 1 ? (
+              portfolio.access.links.map(
+                (link: { url: string; label: string }, index: number) => (
+                  <a
+                    key={`access_link_${index}`}
+                    href={link.url}
+                    className="text-sky-500 underline italic block"
+                  >
+                    {link.label}
+                  </a>
+                )
+              )
+            ) : (
+              <span className="flex items-center gap-x-2 italic">
+                <FaLock className="text-slate-300" />
+                Private Access
+              </span>
+            )}
+          </div>
+          <div className="py-3 lg:px-5">
+            <p className="font-bold">Role:</p>
+            <p>{portfolio?.role}</p>
+          </div>
+          <div className="py-3 lg:px-5">
+            <p className="font-bold">Technology:</p>
+            <div className="grid grid-cols-3 gap-3 mt-5">
+              {portfolio?.tech_stack.map(
+                (tech_stack: string, index: number) => {
+                  const technology = technologies.find(
+                    (item) => item.code === tech_stack
+                  );
+                  if (!technology) return null;
 
-              return (
-                <div className="space-y-2">
-                  <div
-                    className="h-6 w-full bg-contain bg-center bg-no-repeat"
-                    style={{
-                      backgroundImage: `url(${technology.logo_path})`,
-                    }}
-                  ></div>
-                  <div className="text-sm text-slate-500 text-center">
-                    {technology.name}
-                  </div>
-                </div>
-              );
-            })}
+                  return (
+                    <div
+                      className="space-y-2"
+                      key={`portfolio_technology_${index}`}
+                    >
+                      <div
+                        className="h-6 w-full bg-contain bg-center bg-no-repeat"
+                        style={{
+                          backgroundImage: `url(${technology.logo_path})`,
+                        }}
+                      ></div>
+                      <div className="text-sm text-slate-500 text-center">
+                        {technology.name}
+                      </div>
+                    </div>
+                  );
+                }
+              )}
+            </div>
           </div>
         </div>
-      </div>
-      <div className="text-center space-y-1">
-        <p className="font-bold uppercase text-bold text-slate-500">
-          Disclaimer:
-        </p>
-        <p className="text-slate-500">Some access link may be broken due to each business process</p>
-      </div>
-    </Template>
+        <div className="text-center space-y-1 border-t pt-4 w-full">
+          <p className="font-bold uppercase text-bold text-slate-500">
+            Disclaimer:
+          </p>
+          <p className="text-slate-500">
+            Some access link may be broken due to each business process
+          </p>
+        </div>
+      </Template>
+      <Lightbox
+        index={imageIndex}
+        plugins={[Captions]}
+        open={isOpen}
+        close={() => setIsOpen(false)}
+        slides={images}
+      />
+    </>
   );
 };
 

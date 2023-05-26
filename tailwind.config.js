@@ -26,7 +26,7 @@ module.exports = {
           800: colors.sky[800],
           900: colors.sky[900],
         },
-        background: colors.neutral[900]
+        background: colors.neutral[800]
       },
     },
   },

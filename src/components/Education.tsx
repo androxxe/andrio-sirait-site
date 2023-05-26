@@ -1,5 +1,3 @@
-import React from "react";
-
 type EducationType = {
   education: {
     start_year: number;

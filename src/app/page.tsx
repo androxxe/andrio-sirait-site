@@ -1,6 +1,6 @@
 "use client";
 
-import { Services, Template } from "../components";
+import { Template } from "../components";
 import { profile } from "@/data";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
@@ -15,8 +15,9 @@ const Home = () => {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -10, opacity: 0 }}
           transition={{ duration: 0.2 }}
+          className="h-full"
         >
-          <div className="flex items-center justify-center flex-col my-10">
+          <div className="flex items-center justify-center flex-col h-full">
             <p className="mb-2 mt-5">Hello, I’m</p>
             <h2 className="font-bold text-3xl mb-2 text-primary-500">
               {profile.name}
@@ -42,7 +43,6 @@ const Home = () => {
               Download Resume
             </a>
           </div>
-          <Services />
         </motion.div>
       </AnimatePresence>
     </Template>

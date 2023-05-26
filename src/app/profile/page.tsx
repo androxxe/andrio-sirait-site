@@ -5,10 +5,36 @@ import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";
 import { Education, Template, Title } from "@/components";
 import { AnimatePresence, motion } from "framer-motion";
-import { FaChevronRight } from "react-icons/fa";
 
 // TO ENABLE "Q Do k kk X x" FORMATTING ON DAYJS
 dayjs.extend(advancedFormat);
+
+const aboutMeLists: Array<{ label: string; value: string }> = [
+  {
+    label: "Name",
+    value: profile.name_with_title,
+  },
+  {
+    label: "Date of Birth",
+    value: dayjs(profile.date_of_birth).format("MMMM, Do YYYY"),
+  },
+  {
+    label: "Phone",
+    value: profile.phone,
+  },
+  {
+    label: "Email",
+    value: profile.email,
+  },
+  {
+    label: "Web",
+    value: profile.website,
+  },
+  {
+    label: "Address",
+    value: profile.address?.city,
+  },
+];
 
 const ProfilePage: React.FC = () => {
   return (
@@ -23,36 +49,12 @@ const ProfilePage: React.FC = () => {
           <Title>About Me</Title>
           <table className="table-fixed mt-5 mx-auto">
             <tbody>
-              <tr>
-                <td className="text-left text-sm w-[180px]">Name</td>
-                <td className="text-right font-semibold">
-                  {profile.name_with_title}
-                </td>
-              </tr>
-              <tr>
-                <td className="text-left text-sm w-[180px]">Date of Birth</td>
-                <td className="text-right font-semibold">
-                  {dayjs(profile.date_of_birth).format("MMMM, Do YYYY")}
-                </td>
-              </tr>
-              <tr>
-                <td className="text-left text-sm w-[180px]">Phone</td>
-                <td className="text-right font-semibold">{profile.phone}</td>
-              </tr>
-              <tr>
-                <td className="text-left text-sm w-[180px]">Email</td>
-                <td className="text-right font-semibold">{profile.email}</td>
-              </tr>
-              <tr>
-                <td className="text-left text-sm w-[180px]">Web</td>
-                <td className="text-right font-semibold">{profile.website}</td>
-              </tr>
-              <tr>
-                <td className="text-left text-sm w-[180px]">Address</td>
-                <td className="text-right font-semibold">
-                  {profile.address?.city}
-                </td>
-              </tr>
+              {aboutMeLists.map((list, index) => (
+                <tr key={`list_${index}`}>
+                  <td className="text-left text-sm w-[180px]">{list.label}</td>
+                  <td className="text-right font-semibold">{list.value}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
           <Title>Education</Title>

@@ -4,7 +4,11 @@ import { Experience, Skill, Template, Title } from "@/components";
 import { experiences, skills, technologies } from "@/data";
 import { AnimatePresence, motion } from "framer-motion";
 
-// ["languages", "framework_or_library", "tools"]
+type ListsType = Array<{
+  label: string;
+  key: string;
+}>;
+
 const lists: ListsType = [
   {
     label: "Language",
@@ -24,20 +28,7 @@ const lists: ListsType = [
   },
 ];
 
-type ListsType = Array<{
-  label: string;
-  key: string;
-}>;
-
-type ListType = {
-  label: string;
-  key: string;
-};
-
-type SkillType = {
-  level: string;
-  code: string;
-};
+const skillsData: any = skills;
 
 const Resume: React.FC = () => {
   return (
@@ -62,22 +53,21 @@ const Resume: React.FC = () => {
                 {list.label}
               </p>
               <div className="w-full flex flex-wrap gap-[2.5rem]  justify-center">
-                {skills[list.key].map((item, skill_index) => (
-                  <Skill
-                    key={`skill_${index}_${skill_index}`}
-                    src={
-                      technologies.find(
-                        (technology) => technology.code === item.code
-                      )?.logo_path
-                    }
-                    name={
-                      technologies.find(
-                        (technology) => technology.code === item.code
-                      )?.name
-                    }
-                    level={item.level}
-                  />
-                ))}
+                {skillsData[list.key].map((item: any, skill_index: number) => {
+                  const technology = technologies.find(
+                    (technology) => technology.code === item.code
+                  );
+
+                  return (
+                    <Skill
+                      key={`skill_${index}_${skill_index}`}
+                      src={technology?.logo_path}
+                      name={technology?.name}
+                      level={item.level}
+                      is_expertise={item.is_expertise}
+                    />
+                  );
+                })}
               </div>
             </div>
           ))}
