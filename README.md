@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Andrio Sirait Site
 
-## Getting Started
+This simple landing page & portfolio made with Next.js 13 with App Router
 
-First, run the development server:
+_by Andrio Sirait_
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+[Facebook](https://www.facebook.com/yangngambiltaik/) -
+[Linked-In](https://www.linkedin.com/in/andriosirait/)
+
+### **Demo: [https://www.andriosirait.com/](https://www.andriosirait.com/)** ###
+
+![Andrio Sirait](/thumbnail.png)
+
+## Features
+
+- Profile Page
+- Resume Page
+- Portfolio system with filter by **Technology** used and **Platform**, you can also add image and caption, tech stack used, role and demo access
+- Customizeable
+
+## Stack
+
+- [Next.js 13](https://nextjs.org) - The React Framework for the Web
+- [Tailwindcss](https://tailwindcss.com) - A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup
+- [Type Writter JS](https://github.com/tameemsafi/typewriterjs) - A simple JS plugin for cool typewritter effect
+- [Framer Motion](https://www.framer.com/motion/) - An animation library for React
+
+## Project structure
+
+```
+│   # Page files
+├─ src
+|   ├─ app
+│   │  └── page.tsx # React pages
+│   ├─ components
+│   │  └── # React component files
+│   └─ data
+│      └── # data in JSON
+└── public
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How To Customize
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Change Color**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  Open **tailwind.config.js** change all colors primary & background section
 
-## Learn More
+- **Change Data**
 
-To learn more about Next.js, take a look at the following resources:
+  We have 6 json file (profile, experiences, skills, portfolios, technologies, educations) you can change the object value by yourself, but remember **not to change the object key**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Coming Soon
