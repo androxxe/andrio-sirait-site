@@ -2,14 +2,26 @@
   {
     "name": "Inf. Sys. of Harvest and Transportation PT. Tri Bakti Sarimas",
     "short_description": "Optimize fields operational on oil palm plantation company",
-    "description": "",
+    "description": "Tri Bakti Sarimas is a company engaged in oil palm plantations, on its way PT. Tri Bakti Sarimas encountered many operational problems in fields. this application digitizes the process in the field, integrate the data and monitor activity",
     "slug": "tbs",
-    "thumbnail": "/assets/images/portfolio/tbs.jpg",
+    "thumbnail": "/assets/images/portfolio/tbs/tbs.jpg",
     "images": [
-      "/assets/images/portfolio/sci-1.jpg",
-      "/assets/images/portfolio/sci-2.jpg",
-      "/assets/images/portfolio/sci-3.jpg",
-      "/assets/images/portfolio/sci-4.jpg"
+      {
+        "image": "/assets/images/portfolio/tbs/tbs-1.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/tbs/tbs-2.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/tbs/tbs-3.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/tbs/tbs-4.webp",
+        "caption": ""
+      }
     ],
     "role": "Full-Stack Developer",
     "platform": ["web", "android"],
@@ -30,11 +42,32 @@
   },
   {
     "name": "Andomus Mobile",
-    "short_description": "Optimize fields operational on oil palm plantation company",
-    "description": "",
+    "short_description": "Andomus Mobile is an App that presents a digital innovation designed to win legislative elections",
+    "description": "Andomus is an App that presents a digital innovation designed to win legislative elections based on the Statistical, Geospatial and Artificial intelligence Analytical Application Platform to assist winning process by providing certainty One NIK One Data at each level of selection so that the resulting data is more objective and accurate.",
     "slug": "andomus-mobile",
-    "thumbnail": "/assets/images/portfolio/tbs.jpg",
-    "images": [],
+    "thumbnail": "/assets/images/portfolio/andomus-mobile/andomus-1.webp",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/andomus-mobile/andomus-1.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/andomus-mobile/andomus-2.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/andomus-mobile/andomus-3.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/andomus-mobile/andomus-4.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/andomus-mobile/andomus-5.webp",
+        "caption": ""
+      }
+    ],
     "role": "React-Native Developer",
     "platform": ["android"],
     "access": {
@@ -50,11 +83,32 @@
   },
   {
     "name": "ANTS Mobile",
-    "short_description": "Optimize fields operational on oil palm plantation company",
-    "description": "",
+    "short_description": "The ANTS application is used by successor team to gathering support",
+    "description": "The ANTS application is used by successor team to gathering support in the field in real time, integrated for legislative elections",
     "slug": "ants-mobile",
-    "thumbnail": "/assets/images/portfolio/tbs.jpg",
-    "images": [],
+    "thumbnail": "/assets/images/portfolio/ants-mobile/ants-1.webp",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/ants-mobile/ants-1.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/ants-mobile/ants-2.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/ants-mobile/ants-3.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/ants-mobile/ants-4.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/ants-mobile/ants-5.webp",
+        "caption": ""
+      }
+    ],
     "role": "React-Native Developer",
     "platform": ["android"],
     "access": {
@@ -70,11 +124,32 @@
   },
   {
     "name": "PilihanKu",
-    "short_description": "Optimize fields operational on oil palm plantation company",
-    "description": "",
-    "slug": "ants-mobile",
-    "thumbnail": "/assets/images/portfolio/tbs.jpg",
-    "images": [],
+    "short_description": "PilihanKu makes it easy for the public to collect and analyze",
+    "description": "PilihanKu makes it easy for the public to collect and analyze detailed information on prospective members, information on constituencies, and news on the activities of prospective members",
+    "slug": "pilihanku",
+    "thumbnail": "/assets/images/portfolio/pilihanku/pilihanku-1.webp",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/pilihanku/pilihanku-1.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/pilihanku/pilihanku-2.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/pilihanku/pilihanku-3.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/pilihanku/pilihanku-4.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/pilihanku/pilihanku-5.jpg",
+        "caption": ""
+      }
+    ],
     "role": "Full-Stack Developer",
     "platform": ["android"],
     "access": {
@@ -90,11 +165,16 @@
   },
   {
     "name": "Andomus Admin Panel",
-    "short_description": "Optimize fields operational on oil palm plantation company",
-    "description": "",
+    "short_description": "Panel to manage all the data on Andomus Platform",
+    "description": "Panel to manage all the data on Andomus Platform",
     "slug": "andomus-admin-panel",
-    "thumbnail": "/assets/images/portfolio/tbs.jpg",
-    "images": [],
+    "thumbnail": "/assets/images/portfolio/andomus-admin-panel/andomus-panel-admin-1.jpg",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/andomus-admin-panel/andomus-panel-admin-1.jpg",
+        "caption": ""
+      }
+    ],
     "role": "Full-Stack Developer",
     "platform": ["web"],
     "access": {
@@ -105,11 +185,28 @@
   },
   {
     "name": "Scholarship Inf. Sys. Pekanbaru City Goverment",
-    "short_description": "Optimize fields operational on oil palm plantation company",
-    "description": "",
-    "slug": "andomus-admin-panel",
-    "thumbnail": "/assets/images/portfolio/tbs.jpg",
-    "images": [],
+    "short_description": "Inf. Sys for Pekanbaru City Goverment to selecting, reporting schoolarship request that held every year",
+    "description": "Inf. Sys for Pekanbaru City Goverment to selecting, reporting schoolarship request that held every year",
+    "slug": "schoolarship-inf-sys-pekanbaru-city-goverment",
+    "thumbnail": "/assets/images/portfolio/schoolarship-inf-sys-pekanbaru-city-goverment/beasiswa-1.jpg",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/schoolarship-inf-sys-pekanbaru-city-goverment/beasiswa-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/schoolarship-inf-sys-pekanbaru-city-goverment/beasiswa-2.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/schoolarship-inf-sys-pekanbaru-city-goverment/beasiswa-3.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/schoolarship-inf-sys-pekanbaru-city-goverment/beasiswa-4.jpg",
+        "caption": ""
+      }
+    ],
     "role": "Full-Stack Developer",
     "platform": ["web"],
     "access": {
@@ -124,12 +221,21 @@
     "tech_stack": ["php", "js", "laravel", "react"]
   },
   {
-    "name": "Al-Khoir Islamic Boarding School Admission Inf. Sys. for New Students",
+    "name": "Al-Khoir Boarding School Admission Inf. Sys. for New Students",
     "short_description": "Optimize fields operational on oil palm plantation company",
     "description": "",
-    "slug": "andomus-admin-panel",
-    "thumbnail": "/assets/images/portfolio/tbs.jpg",
-    "images": [],
+    "slug": "alkhoir-inf-system",
+    "thumbnail": "/assets/images/portfolio/alkhoir-inf-system/alkhoir-1.jpg",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/alkhoir-inf-system/alkhoir-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/alkhoir-inf-system/alkhoir-2.jpg",
+        "caption": ""
+      }
+    ],
     "role": "Full-Stack Developer",
     "platform": ["web"],
     "access": {
@@ -145,11 +251,16 @@
   },
   {
     "name": "WhatsApp Gateway - REST API",
-    "short_description": "Optimize fields operational on oil palm plantation company",
-    "description": "",
-    "slug": "andomus-admin-panel",
-    "thumbnail": "/assets/images/portfolio/tbs.jpg",
-    "images": [],
+    "short_description": "WhatsApp gateway to send, receive messages that coming to instances",
+    "description": "WhatsApp gateway to send, receive messages that coming to instances, build on top of Baileys library",
+    "slug": "whatsapp-rest-api",
+    "thumbnail": "/assets/images/portfolio/whatsapp-rest-api/wa-gateway-1.png",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/whatsapp-rest-api/wa-gateway-1.png",
+        "caption": ""
+      }
+    ],
     "role": "Full-Stack Developer",
     "platform": ["web"],
     "access": {
@@ -161,10 +272,23 @@
   {
     "name": "WarungSegar Application",
     "short_description": "Easy shopping for your kitchen needs in Pekanbaru City",
-    "description": "",
+    "description": "Now you don't have to worry anymore that you don't have time to shop at the market to meet your family's cooking needs. It's time to shop at WarungSegar, only with a Smartphone we provide all your cooking needs. Easy shopping for your kitchen needs in Pekanbaru City",
     "slug": "warungsegar",
-    "thumbnail": "/assets/images/portfolio/warungsegar.jpg",
-    "images": [],
+    "thumbnail": "/assets/images/portfolio/warungsegar/warungsegar.jpg",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/warungsegar/warungsegar-1.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/warungsegar/warungsegar-2.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/warungsegar/warungsegar-3.webp",
+        "caption": ""
+      }
+    ],
     "role": "Lead Developer",
     "platform": ["web", "android"],
     "access": {
@@ -181,10 +305,19 @@
   {
     "name": "Nginvite.com",
     "short_description": "Nginvite is an online invitation based on web application with self-service concept which allow user to create and choose design for their invitation",
-    "description": "",
+    "description": "Nginvite is online invitation based on web application with self-service concept which allow user to create and choose design for their invitation. Nginvite was launched in December 2021",
     "slug": "nginvite.com",
-    "thumbnail": "/assets/images/portfolio/nginvite.jpg",
-    "images": [],
+    "thumbnail": "/assets/images/portfolio/nginvite/nginvite.jpg",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/nginvite/nginvite-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/nginvite/nginvite-2.jpg",
+        "caption": ""
+      }
+    ],
     "role": "Lead Developer",
     "platform": ["web"],
     "access": {
@@ -199,12 +332,29 @@
     "tech_stack": ["php", "laravel", "sass"]
   },
   {
-    "name": "SPRIPIM Polda Riau",
+    "name": "Inf. Sys. SPRIPIM Riau Police",
     "short_description": "SPRIPIM Polda Riau is an archive data collection, financial management, and scheduling  management",
-    "description": "",
-    "slug": "spripim",
-    "thumbnail": "/assets/images/portfolio/spripim.png",
-    "images": [],
+    "description": "SPRIPIM Polda Riau is an archive data collection, financial management, and scheduling management application for the Riau Regional Police leadership. This application is used internally by the police within scope SPRIPIM Polda Riau",
+    "slug": "inf-sys-spripim-riau-police",
+    "thumbnail": "/assets/images/portfolio/inf-sys-spripim-riau-police/spripim.png",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/inf-sys-spripim-riau-police/spripim-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/inf-sys-spripim-riau-police/spripim-2.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/inf-sys-spripim-riau-police/spripim-3.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/inf-sys-spripim-riau-police/spripim-4.jpg",
+        "caption": ""
+      }
+    ],
     "role": "Full-Stack Developer",
     "platform": ["web", "android", "ios"],
     "access": {
@@ -219,12 +369,29 @@
     "tech_stack": ["php", "js", "react", "laravel", "react-native"]
   },
   {
-    "name": "Smart Center Indonesia",
+    "name": "Inf. Sys. Smart Center Indonesia",
     "short_description": "Smart Center Indonesia is a Tutoring Center, Private Lessons to Home, Courses for All Levels of Education and the General",
-    "description": "",
-    "slug": "sci",
-    "thumbnail": "/assets/images/portfolio/sci.png",
-    "images": [],
+    "description": "Smart Center Indonesia is a Tutoring Center, Private Lessons to Home, Courses for All Levels of Education and the General in Pekanbaru. This application manage from scheduling, student attendance to payroll",
+    "slug": "inf-sys-smart-center-indonesia",
+    "thumbnail": "/assets/images/portfolio/inf-sys-smart-center-indonesia/sci.png",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/inf-sys-smart-center-indonesia/sci-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/inf-sys-smart-center-indonesia/sci-2.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/inf-sys-smart-center-indonesia/sci-3.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/inf-sys-smart-center-indonesia/sci-4.jpg",
+        "caption": ""
+      }
+    ],
     "role": "Full-Stack Developer",
     "platform": ["web", "android", "ios"],
     "access": {
@@ -239,12 +406,29 @@
     "tech_stack": ["php", "js", "react", "laravel", "react-native"]
   },
   {
-    "name": "Etangkahan",
+    "name": "Etangkahan E-commerce",
     "short_description": "E-Tangkahan is a modern online shopping application based on android and iOS in Medan City",
-    "description": "",
+    "description": "E-Tangkahan is a modern online shopping application based on android and iOS in Medan City",
     "slug": "etangkahan",
-    "thumbnail": "/assets/images/portfolio/etangkahan.jpg",
-    "images": [],
+    "thumbnail": "/assets/images/portfolio/etangkahan/etangkahan.jpg",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/etangkahan/etangkahan-1.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/etangkahan/etangkahan-2.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/etangkahan/etangkahan-3.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/etangkahan/etangkahan-4.webp",
+        "caption": ""
+      }
+    ],
     "role": "Full-Stack Developer",
     "platform": ["web", "android", "ios"],
     "access": {
@@ -259,12 +443,25 @@
     "tech_stack": ["php", "js", "laravel", "react-native"]
   },
   {
-    "name": "MBKM FKIP Negeri Indonesia",
+    "name": "Inf. Sys. MBKM FKIP Negeri Indonesia",
     "short_description": "Inf. Sys. for Communication forum of Faculty of Teacher Training and Education in Indonesia",
-    "description": "",
+    "description": "This information system is built for Communication forum of Faculty of Teacher Training and Education in Indonesia, This information system allows students to choose the courses they want to take at other universities. And so this information system manage all the students, course and course assessment data",
     "slug": "mbkm-fkip-negeri",
-    "thumbnail": "/assets/images/portfolio/mbkm.jpg",
-    "images": [],
+    "thumbnail": "/assets/images/portfolio/mbkm-fkip-negeri/mbkm.jpg",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/mbkm-fkip-negeri/mbkm-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/mbkm-fkip-negeri/mbkm-2.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/mbkm-fkip-negeri/mbkm-3.jpg",
+        "caption": ""
+      }
+    ],
     "role": "Full-Stack Developer",
     "platform": ["web"],
     "access": {
@@ -279,12 +476,33 @@
     "tech_stack": ["php", "laravel"]
   },
   {
-    "name": "Data Collection Inf. Sys. for ITWASDA Polda Riau",
+    "name": "Data Collection Inf. Sys. for ITWASDA Riau Police",
     "short_description": "Data collection Inf. Sys. for Regional Supervision Inspector of Riau Regional Police",
-    "description": "",
-    "slug": "sistem-pendataan-itwasda-polda-riau",
-    "thumbnail": "/assets/images/portfolio/pendataan.jpg",
-    "images": [],
+    "description": "Data collection information system for Regional Supervision Inspector of Riau Regional Police",
+    "slug": "data-collection-itwasda-riau-police",
+    "thumbnail": "/assets/images/portfolio/data-collection-itwasda-riau-police/pendataan.jpg",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/data-collection-itwasda-riau-police/pendataan.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/data-collection-itwasda-riau-police/pendataan-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/data-collection-itwasda-riau-police/pendataan-2.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/data-collection-itwasda-riau-police/itwasda.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/data-collection-itwasda-riau-police/itwasda-1.jpg",
+        "caption": ""
+      }
+    ],
     "role": "Full-Stack Developer",
     "platform": ["web"],
     "access": {
@@ -301,10 +519,19 @@
   {
     "name": "AR Culture Education Technology",
     "short_description": "Augmented Reality application that explains various historical places in Riau Province",
-    "description": "",
+    "description": "Augmented Reality application that explains various historical places in Riau Province",
     "slug": "ar-culture-education-technology",
-    "thumbnail": "/assets/images/portfolio/cet.jpg",
-    "images": [],
+    "thumbnail": "/assets/images/portfolio/ar-culture-education-technology/cet.jpg",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/ar-culture-education-technology/cet-1.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/ar-culture-education-technology/cet-2.webp",
+        "caption": ""
+      }
+    ],
     "role": "Full-Stack Developer",
     "platform": ["android"],
     "access": {
@@ -321,10 +548,27 @@
   {
     "name": "STEM Indonesia",
     "short_description": "Learning media that can be used for various levels of formal education or other non-formal education",
-    "description": "",
+    "description": "Learning media that can be used for various levels of formal education or other non-formal education",
     "slug": "stem-indonesia",
-    "thumbnail": "/assets/images/portfolio/stem.jpg",
-    "images": [],
+    "thumbnail": "/assets/images/portfolio/stem-indonesia/stem.jpg",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/stem-indonesia/stem-1.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/stem-indonesia/stem-2.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/stem-indonesia/stem-3.webp",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/stem-indonesia/stem-4.webp",
+        "caption": ""
+      }
+    ],
     "role": "Full-Stack Developer",
     "platform": ["web", "android"],
     "access": {

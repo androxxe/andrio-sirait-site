@@ -2,81 +2,99 @@
   "languages": [
     {
       "code": "ts",
-      "level": "Intermediate"
+      "level": "",
+      "is_expertise": false
     },
     {
       "code": "js",
-      "level": "Expert"
+      "level": "",
+      "is_expertise": false
     },
     {
       "code": "php",
-      "level": "Expert"
+      "level": "",
+      "is_expertise": false
     }
   ],
   "framework_or_library": [
     {
       "code": "react-native",
-      "level": "Expert"
+      "level": "",
+      "is_expertise": true
     },
     {
       "code": "react",
-      "level": "Expert"
-    },
-    {
-      "code": "nextjs",
-      "level": "Intermediate"
-    },
-    {
-      "code": "expressjs",
-      "level": "Intermediate"
+      "level": "",
+      "is_expertise": true
     },
     {
       "code": "laravel",
-      "level": "Expert"
+      "level": "",
+      "is_expertise": true
+    },
+    {
+      "code": "nextjs",
+      "level": "",
+      "is_expertise": false
+    },
+    {
+      "code": "expressjs",
+      "level": "",
+      "is_expertise": false
     },
     {
       "code": "ci",
-      "level": "Expert"
+      "level": "",
+      "is_expertise": false
     },
     {
       "code": "sass",
-      "level": "Intermediate"
+      "level": "",
+      "is_expertise": false
     },
     {
       "code": "tailwind",
-      "level": "Expert"
+      "level": "",
+      "is_expertise": false
     },
     {
       "code": "bootstrap",
-      "level": "Intermediate"
+      "level": "",
+      "is_expertise": false
     }
   ],
   "databases": [
     {
       "code": "mysql",
-      "level": "Expert"
+      "level": "",
+      "is_expertise": false
     },
     {
       "code": "postgresql",
-      "level": "Expert"
+      "level": "",
+      "is_expertise": false
     },
     {
       "code": "oracle",
-      "level": "Intermediate"
+      "level": "",
+      "is_expertise": false
     }
   ],
   "tools": [
     {
       "code": "vscode",
-      "level": "Expert"
+      "level": "",
+      "is_expertise": false
     },
     {
       "code": "git",
-      "level": "Expert"
+      "level": "",
+      "is_expertise": false
     },
     {
       "code": "docker",
-      "level": "Intermediate"
+      "level": "",
+      "is_expertise": false
     }
   ]
 }
