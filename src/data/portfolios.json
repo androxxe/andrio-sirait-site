@@ -222,8 +222,8 @@
   },
   {
     "name": "Al-Khoir Boarding School Admission Inf. Sys. for New Students",
-    "short_description": "Optimize fields operational on oil palm plantation company",
-    "description": "",
+    "short_description": "Manage data of students who register to school, report and payment",
+    "description": "Inf. Sys for Al-Khoir Boarding School used to manage data of students who register to school, manage report and manage payments that integrated to BRI (Bank Republik Indonesia) API",
     "slug": "alkhoir-inf-system",
     "thumbnail": "/assets/images/portfolio/alkhoir-inf-system/alkhoir-1.jpg",
     "images": [
@@ -247,7 +247,7 @@
         }
       ]
     },
-    "tech_stack": ["php", "js", "laravel", "react"]
+    "tech_stack": ["php", "js", "laravel"]
   },
   {
     "name": "WhatsApp Gateway - REST API",
@@ -515,35 +515,6 @@
       ]
     },
     "tech_stack": ["php", "laravel"]
-  },
-  {
-    "name": "AR Culture Education Technology",
-    "short_description": "Augmented Reality application that explains various historical places in Riau Province",
-    "description": "Augmented Reality application that explains various historical places in Riau Province",
-    "slug": "ar-culture-education-technology",
-    "thumbnail": "/assets/images/portfolio/ar-culture-education-technology/cet.jpg",
-    "images": [
-      {
-        "image": "/assets/images/portfolio/ar-culture-education-technology/cet-1.webp",
-        "caption": ""
-      },
-      {
-        "image": "/assets/images/portfolio/ar-culture-education-technology/cet-2.webp",
-        "caption": ""
-      }
-    ],
-    "role": "Full-Stack Developer",
-    "platform": ["android"],
-    "access": {
-      "is_public": true,
-      "links": [
-        {
-          "label": "Click Here",
-          "url": ""
-        }
-      ]
-    },
-    "tech_stack": ["unity"]
   },
   {
     "name": "STEM Indonesia",
