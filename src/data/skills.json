@@ -82,12 +82,17 @@
   ],
   "tools": [
     {
-      "code": "vscode",
+      "code": "github",
       "level": "",
       "is_expertise": false
     },
     {
-      "code": "git",
+      "code": "gitlab",
+      "level": "",
+      "is_expertise": false
+    },
+    {
+      "code": "figma",
       "level": "",
       "is_expertise": false
     },

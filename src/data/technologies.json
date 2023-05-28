@@ -120,6 +120,24 @@
     "code": "git"
   },
   {
+    "name": "GitHub",
+    "logo_path": "/assets/images/technology/github.png",
+    "type": "tools",
+    "code": "github"
+  },
+  {
+    "name": "Gitlab",
+    "logo_path": "/assets/images/technology/gitlab.png",
+    "type": "tools",
+    "code": "gitlab"
+  },
+  {
+    "name": "Figma",
+    "logo_path": "/assets/images/technology/figma.png",
+    "type": "tools",
+    "code": "figma"
+  },
+  {
     "name": "Docker",
     "logo_path": "/assets/images/technology/docker.webp",
     "type": "tools",
