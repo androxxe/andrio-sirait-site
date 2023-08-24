@@ -1,7 +1,7 @@
 interface TEducation {
   education: {
-    start_year: number;
-    end_year?: number;
+    start_year?: number | null;
+    end_year?: number | null;
     degree: string;
     school: string;
     description: string;
@@ -14,7 +14,7 @@ const Education = (props: TEducation) => {
   return (
     <li className="ml-5">
       <div className="absolute w-3 h-3 bg-primary-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-      {education.start_year && education.end_year ? (
+      {education?.start_year && education?.end_year ? (
         <time className="mb-1 text-sm font-normal leading-none text-gray-600">
           {education.start_year} - {education.end_year ?? "now"}
         </time>
