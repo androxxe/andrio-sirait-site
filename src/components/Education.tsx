@@ -1,4 +1,4 @@
-type EducationType = {
+interface TEducation {
   education: {
     start_year: number;
     end_year?: number;
@@ -6,9 +6,11 @@ type EducationType = {
     school: string;
     description: string;
   };
-};
+}
 
-const Education = ({ education }: EducationType) => {
+const Education = (props: TEducation) => {
+  const { education } = props;
+  
   return (
     <li className="ml-5">
       <div className="absolute w-3 h-3 bg-primary-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>

@@ -11,16 +11,13 @@ export const metadata: Metadata = {
   description: `${profile.name} Personal Website`,
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-  menu: string;
-}) {
+export default async function RootLayout({ children }: { children: React.ReactNode; menu: string }) {
+  // fetch(`${process.env.APP_URL}/api/stats`);
+
   return (
     <html lang="en">
       <body className={plusJakartaSans.className}>
-        <main className="bg-background p-3 md:p-12 lg:h-screen">
+        <main className="bg-background p-3 md:p-10 lg:h-screen">
           <div className="bg-gray-50 rounded-lg lg:h-full relative flex flex-col lg:flex-row justify-start items-start">
             <SidebarProfile />
             <div className="ml-auto w-full h-full relative">{children}</div>

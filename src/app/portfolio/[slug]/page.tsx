@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Template, Title } from "@/components";
-import { portfolios, profile, technologies } from "@/data";
+import { portfolios, technologies } from "@/data";
 import { FaChevronLeft, FaLock } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import Lightbox from "yet-another-react-lightbox";
@@ -11,6 +11,7 @@ import PhotoAlbum from "react-photo-album";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 import { calculateImageHeight } from "@/helpers";
+import Image from "next/image";
 
 type PortfolioDetailType = {
   params: {
@@ -64,7 +65,7 @@ const PortfolioDetail = ({ params: { slug } }: PortfolioDetailType) => {
           <FaChevronLeft />
           <span>Back</span>
         </a>
-        <Title>{portfolio?.name}</Title>
+        <Title>{portfolio.name}</Title>
         <PhotoAlbum
           layout="rows"
           targetRowHeight={400}
@@ -128,12 +129,17 @@ const PortfolioDetail = ({ params: { slug } }: PortfolioDetailType) => {
                       className="space-y-2"
                       key={`portfolio_technology_${index}`}
                     >
-                      <div
-                        className="h-6 w-full bg-contain bg-center bg-no-repeat"
-                        style={{
-                          backgroundImage: `url(${technology.logo_path})`,
-                        }}
-                      ></div>
+                      <div className="w-full h-6 relative overflow-hidden">
+                        <Image
+                          className="object-contain"
+                          src={technology.logo_path}
+                          fill
+                          quality={80}
+                          loading="lazy"
+                          alt={`Tech stack ${technology.name}`}
+                          content="fill"
+                        />
+                      </div>
                       <div className="text-sm text-slate-500 text-center">
                         {technology.name}
                       </div>

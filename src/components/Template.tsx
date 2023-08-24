@@ -1,12 +1,12 @@
 import React from "react";
 import Menu from "./Menu";
 
-type TemplateType = {
-  children: any;
+interface TTemplate {
+  children: JSX.Element | React.ReactNode;
   menu: string;
-};
+}
 
-const Template = ({ children, menu }: TemplateType) => {
+const Template = ({ children, menu }: TTemplate) => {
   return (
     <div className="ml-auto w-full h-full relative flex flex-col">
       <Menu active={menu} />

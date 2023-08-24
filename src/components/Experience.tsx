@@ -3,7 +3,7 @@ import React from "react";
 import { RxDotFilled } from "react-icons/rx";
 import { MdWork } from "react-icons/md";
 
-type ExperienceType = {
+interface TExperience {
   experience: {
     working_date: Array<{
       start_month: number;
@@ -12,18 +12,19 @@ type ExperienceType = {
       end_year?: number | null;
       status: string;
     }>;
-    // working_date: any
     company: string;
     position: string;
     description: string;
   };
-};
+}
 
-const Experience = ({ experience }: ExperienceType) => {
+const Experience = (props: TExperience) => {
+  const { experience } = props;
+
   return (
     <li className="ml-5">
-      <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white">
-        <MdWork className="text-blue-600 text-xs" />
+      <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white">
+        <MdWork className="text-primary-600 text-xs" />
       </span>
       {experience.working_date.map((working_date, index) => (
         <div

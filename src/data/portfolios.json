@@ -41,6 +41,70 @@
     "tech_stack": ["js", "laravel", "react", "react-native"]
   },
   {
+    "name": "LaporMas Mobile & Backend",
+    "short_description": "LaporMas is a pilot project for PT PLN (Persero)",
+    "description": "LaporMas is a pilot project for PT PLN (Persero) UP2B DKI Jakarta & Banten which records and tracks the process of repairing damage to substations or bays in the company",
+    "slug": "lapormas",
+    "thumbnail": "/assets/images/portfolio/lapormas/lapormas.png",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/lapormas/lapormas-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/lapormas/lapormas-2.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/lapormas/lapormas-3.png",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/lapormas/lapormas-4.png",
+        "caption": ""
+      }
+    ],
+    "role": "Full-Stack Developer",
+    "platform": ["web", "android", "ios"],
+    "access": {
+      "is_public": false,
+      "links": []
+    },
+    "tech_stack": ["ts", "expressjs", "react", "react-native"]
+  },
+  {
+    "name": "Clevis Vendor Mobile App",
+    "short_description": "Clevis Vendor is one of the applications from the Clevis ecosystem",
+    "description": "Clevis Vendor is one of the applications from the Clevis ecosystem, which is a laundry and car wash service that serves in the Middle East and Europe, this application is used by merchants, namely laundry and car wash parties",
+    "slug": "clevis",
+    "thumbnail": "/assets/images/portfolio/clevis/clevis.png",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/clevis/clevis-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/clevis/clevis-2.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/clevis/clevis-3.png",
+        "caption": ""
+      },
+      {
+        "image": "/assets/images/portfolio/clevis/clevis-4.png",
+        "caption": ""
+      }
+    ],
+    "role": "Mobile Developer",
+    "platform": ["android", "ios"],
+    "access": {
+      "is_public": false,
+      "links": []
+    },
+    "tech_stack": ["ts", "react-native"]
+  },
+  {
     "name": "Andomus Mobile",
     "short_description": "Andomus Mobile is an App that presents a digital innovation designed to win legislative elections",
     "description": "Andomus is an App that presents a digital innovation designed to win legislative elections based on the Statistical, Geospatial and Artificial intelligence Analytical Application Platform to assist winning process by providing certainty One NIK One Data at each level of selection so that the resulting data is more objective and accurate.",
@@ -83,8 +147,8 @@
   },
   {
     "name": "ANTS Mobile",
-    "short_description": "The ANTS application is used by successor team to gathering support",
-    "description": "The ANTS application is used by successor team to gathering support in the field in real time, integrated for legislative elections",
+    "short_description": "ANTS is one of application on Andomus Ecosystem",
+    "description": "ANTS is one of application on Andomus Ecosystem, ANTS application is used by successor team to gathering support in the field in real time, integrated for legislative elections",
     "slug": "ants-mobile",
     "thumbnail": "/assets/images/portfolio/ants-mobile/ants-1.webp",
     "images": [
@@ -125,7 +189,7 @@
   {
     "name": "PilihanKu",
     "short_description": "PilihanKu makes it easy for the public to collect and analyze",
-    "description": "PilihanKu makes it easy for the public to collect and analyze detailed information on prospective members, information on constituencies, and news on the activities of prospective members",
+    "description": "PilihanKu is one of application on Andomus ecosystem, makes it easy for the public to collect and analyze detailed information on prospective members, information on constituencies, and news on the activities of prospective members",
     "slug": "pilihanku",
     "thumbnail": "/assets/images/portfolio/pilihanku/pilihanku-1.webp",
     "images": [
@@ -166,7 +230,7 @@
   {
     "name": "Andomus Admin Panel",
     "short_description": "Panel to manage all the data on Andomus Platform",
-    "description": "Panel to manage all the data on Andomus Platform",
+    "description": "Andomus Admin Panel allow us to manage all data that exist on platform, create report, showing history for organization operations",
     "slug": "andomus-admin-panel",
     "thumbnail": "/assets/images/portfolio/andomus-admin-panel/andomus-panel-admin-1.jpg",
     "images": [

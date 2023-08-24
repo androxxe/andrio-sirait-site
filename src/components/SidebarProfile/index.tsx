@@ -1,16 +1,12 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { profile } from "@/data";
+import ImageProfile from "./ImageProfile";
 
-const Profile: React.FC = () => {
+const Profile = (): JSX.Element => {
   return (
     <div className="bg-primary-500 h-full w-full lg:w-2/5 rounded-tl-lg rounded-bl-lg rounded-tr-lg lg:rounded-tr-none relative">
-      <div
-        className="h-[350px] lg:h-full w-full relative bg-contain bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${profile.photo_path})`,
-        }}
-      ></div>
+      <ImageProfile />
       <div className="absolute bottom-0 p-5 text-white text-center w-full bg-primary-600 rounded-bl-lg">
         <h2 className="font-bold">{profile.name}</h2>
         <h2 className="text-sm font-light">{profile.role}</h2>
