@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode; menu: string }) {
-  // fetch(`${process.env.APP_URL}/api/stats`);
+  fetch(`${process.env.APP_URL}/api/stats`);
 
   return (
     <html lang="en">
