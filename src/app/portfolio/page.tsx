@@ -141,18 +141,18 @@ const SidebarTechStack = (props: TSidebarTechStack) => {
             {technologies
               .filter((technology) => technology.type === type)
               .map((technology, technology_index) => (
-                <div
+                <button
                   data-umami-event={`[PORTFOLIO][TECH STACK] ${technology.name}`}
                   key={`technology_${index}_${technology_index}`}
                   className={cn(
-                    `duration-200 hover:scale-[90%] hover:border-primary-600 hover:text-primary-600 px-2 py-1 text-sm border cursor-pointer rounded-lg pointer`,
+                    `block w-full text-left duration-200 hover:scale-[90%] hover:border-primary-600 hover:text-primary-600 px-2 py-1 text-sm border cursor-pointer rounded-lg pointer`,
                     selectedTechnologies.find((item) => item === technology.code) ? "border-primary-600 text-primary-600" : "text-slate-600",
                     selectedPlatforms.find((item) => item === technology.code) ? "border-primary-600 text-primary-600" : "text-slate-600"
                   )}
                   onClick={() => handleFilter(technology.code, technology.type)}
                 >
                   {technology.name}
-                </div>
+                </button>
               ))}
           </div>
         </div>

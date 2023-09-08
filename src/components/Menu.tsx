@@ -31,12 +31,9 @@ const Menu = ({ active }: { active: ActiveType }) => {
   return (
     <div className="flex lg:justify-center space-x-2 p-5 bg-gray-100 shadow-sm overflow-x-auto rounded-xl">
       {menuList.map((item, index) => (
-        <Link key={`menu_${index}`} href={item.route}>
+        <Link key={`menu_${index}`} href={item.route} data-umami-event={`[BUTTON] ${item.name}`}>
           {active === item.route ? (
-            <div
-              data-umami-event={`[BUTTON] ${item.name}`}
-              className="cursor-pointer px-3 py-2 flex justify-center items-center gap-x-3 text-slate-700 text-sm lg:text-base hover:text-slate-900 border-b-2 border-b-primary-500"
-            >
+            <div className="cursor-pointer px-3 py-2 flex justify-center items-center gap-x-3 text-slate-700 text-sm lg:text-base hover:text-slate-900 border-b-2 border-b-primary-500">
               <div className="font-bold text-primary-500">{item.name}</div>
             </div>
           ) : (
