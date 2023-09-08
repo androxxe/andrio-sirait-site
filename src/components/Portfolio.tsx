@@ -15,7 +15,7 @@ type PortfolioType = {
 
 const Portfolio = ({ portfolio }: PortfolioType) => {
   return (
-    <Link href={`/portfolio/${portfolio.slug}`}>
+    <Link href={`/portfolio/${portfolio.slug}`} data-umami-event={`[PORTFOLIO][CARD] ${portfolio.name}`} >
       <div className="w-full h-80 relative border-2 border-slate-200 rounded-lg hover:scale-[101%] ease-out duration-100 group/portfolio">
         <div className="absolute top-0 right-0 z-10 mt-2 mx-2 flex flex-wrap gap-1 h-10 justify-end">
           {portfolio.tech_stack.map((tech_stack, index) => (

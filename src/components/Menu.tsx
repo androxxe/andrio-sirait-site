@@ -33,7 +33,10 @@ const Menu = ({ active }: { active: ActiveType }) => {
       {menuList.map((item, index) => (
         <Link key={`menu_${index}`} href={item.route}>
           {active === item.route ? (
-            <div className="cursor-pointer px-3 py-2 flex justify-center items-center gap-x-3 text-slate-700 text-sm lg:text-base hover:text-slate-900 border-b-2 border-b-primary-500">
+            <div
+              data-umami-event={`[BUTTON] ${item.name}`}
+              className="cursor-pointer px-3 py-2 flex justify-center items-center gap-x-3 text-slate-700 text-sm lg:text-base hover:text-slate-900 border-b-2 border-b-primary-500"
+            >
               <div className="font-bold text-primary-500">{item.name}</div>
             </div>
           ) : (

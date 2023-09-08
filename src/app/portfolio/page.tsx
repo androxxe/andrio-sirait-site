@@ -142,6 +142,7 @@ const SidebarTechStack = (props: TSidebarTechStack) => {
               .filter((technology) => technology.type === type)
               .map((technology, technology_index) => (
                 <div
+                  data-umami-event={`[PORTFOLIO][TECH STACK] ${technology.name}`}
                   key={`technology_${index}_${technology_index}`}
                   className={cn(
                     `duration-200 hover:scale-[90%] hover:border-primary-600 hover:text-primary-600 px-2 py-1 text-sm border cursor-pointer rounded-lg pointer`,
