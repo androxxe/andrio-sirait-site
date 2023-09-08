@@ -18,6 +18,7 @@ const Profile = (): JSX.Element => {
                 rel="noreferrer"
                 href={profile.social_media.facebook}
                 className="text-lg"
+                data-umami-event="[SOCIAL MEDIA] Facebook"
               >
                 <FaFacebook />
               </a>
@@ -29,6 +30,7 @@ const Profile = (): JSX.Element => {
                 rel="noreferrer"
                 href={profile.social_media.instagram}
                 className="text-lg"
+                data-umami-event="[SOCIAL MEDIA] Instagram"
               >
                 <FaInstagram />
               </a>
@@ -40,6 +42,7 @@ const Profile = (): JSX.Element => {
                 rel="noreferrer"
                 href={profile.social_media.linked_in}
                 className="text-lg"
+                data-umami-event="[SOCIAL MEDIA] Linked-In"
               >
                 <FaLinkedin />
               </a>
@@ -51,6 +54,7 @@ const Profile = (): JSX.Element => {
                 rel="noreferrer"
                 href={profile.social_media.github}
                 className="text-lg"
+                data-umami-event="[SOCIAL MEDIA] GitHub"
               >
                 <FaGithub />
               </a>
