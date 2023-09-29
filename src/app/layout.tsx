@@ -3,7 +3,6 @@ import { Footer, SidebarProfile } from "@/components";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { profile } from "@/data";
 import { Metadata } from "next";
-import Head from "next/head";
 import Script from "next/script";
 
 const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
@@ -14,9 +13,12 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode; menu: string }) {
+  const UMAMI_URL = process.env.UMAMI_URL;
+  const UMAMI_WEBSITE_ID = process.env.UMAMI_WEBSITE_ID;
+
   return (
     <html lang="en">
-      <Script async defer src="https://umami.andriosirait.com/script.js" data-website-id="366ca6bc-1e5d-4693-afb9-e737abcd2e41" data-domains="andriosirait.com"></Script>
+      <Script async defer src={UMAMI_URL} data-website-id={UMAMI_WEBSITE_ID} data-domains="andriosirait.com"></Script>
       <body className={plusJakartaSans.className}>
         <main className="bg-background p-3 md:p-10 lg:h-screen">
           <div className="bg-gray-50 rounded-lg lg:h-full relative flex flex-col lg:flex-row justify-start items-start">
