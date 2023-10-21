@@ -228,6 +228,39 @@
     "tech_stack": ["js", "php", "react"]
   },
   {
+    "name": "Payment Portal PT. Omurah Perkasa Abadi Indonesia",
+    "short_description": "Payment Portal for OPA, Indonesia, enabling credit card, virtual account, and e-wallet payments. Facilitating hourly meeting.ai license sales.",
+    "description": "Developed a versatile Payment Portal for PT. Omurah Perkasa Indonesia (OPA) in Indonesia, enabling seamless payment processing for their services, with a primary focus on credit card transactions while also accommodating virtual account and e-wallet payments. This platform empowers OPA to efficiently sell meeting.ai licenses per hour, enhancing their business operations and ensuring a smooth payment experience for their clients.",
+    "slug": "payment-portal-opaindonesia",
+    "thumbnail": "/assets/images/portfolio/payment-opaindonesia/opaindonesia-1.jpg",
+    "images": [
+      {
+        "image": "/assets/images/portfolio/payment-opaindonesia/opaindonesia-1.jpg",
+        "caption": "Login Page"
+      },
+      {
+        "image": "/assets/images/portfolio/payment-opaindonesia/opaindonesia-2.jpg",
+        "caption": "Dashboard Page"
+      },
+      {
+        "image": "/assets/images/portfolio/payment-opaindonesia/opaindonesia-3.jpg",
+        "caption": "History Page"
+      }
+    ],
+    "role": "Full-Stack Developer",
+    "platform": ["web"],
+    "access": {
+      "is_public": true,
+      "links": [
+        {
+          "label": "Click Here",
+          "url": "http://meetingai.opaindonesia.co.id/"
+        }
+      ]
+    },
+    "tech_stack": ["ts", "nextjs"]
+  },
+  {
     "name": "Andomus Admin Panel",
     "short_description": "Panel to manage all the data on Andomus Platform",
     "description": "Andomus Admin Panel allow us to manage all data that exist on platform, create report, showing history for organization operations",
