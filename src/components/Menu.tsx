@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { TMenuList } from "@/types";
+import { IMenuList } from "@/types";
 
-const menuList: TMenuList[] = [
+const menuList: IMenuList[] = [
   {
     name: "Home",
     route: "/",
