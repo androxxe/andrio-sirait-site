@@ -72,7 +72,6 @@ const PortfolioDetail = ({ params: { slug } }: PortfolioDetailType) => {
             setIsOpen(true);
           }}
         />
-        {JSON.stringify(images)}
         <p className="my-10 text-justify">{portfolio?.description ?? "No Description"}</p>
         <div className="space-x-2 mb-10">
           {portfolio?.platform.map((platform: string, index: number) => (
