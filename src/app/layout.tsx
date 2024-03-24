@@ -18,7 +18,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang="en">
-      <Script async defer src={UMAMI_URL} data-website-id={UMAMI_WEBSITE_ID} data-domains="andriosirait.com"></Script>
+      <Script defer src={UMAMI_URL} data-website-id={UMAMI_WEBSITE_ID}></Script>
       <body className={plusJakartaSans.className}>
         <main className="bg-background p-3 md:p-10 lg:h-screen">
           <div className="bg-gray-50 rounded-lg lg:h-full relative flex flex-col lg:flex-row justify-start items-start">
