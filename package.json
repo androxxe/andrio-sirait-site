@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\"",
-    "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,css,md}\""
+    "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "prepare": "husky"
   },
   "dependencies": {
     "clsx": "^2.0.0",
@@ -25,6 +26,8 @@
     "yet-another-react-lightbox": "^3.10.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.3.1",
+    "@commitlint/config-conventional": "^20.3.1",
     "@types/node": "20.2.3",
     "@types/qs": "^6.9.7",
     "@types/react": "18.2.6",
@@ -34,6 +37,7 @@
     "eslint-config-next": "13.4.3",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
+    "husky": "^9.1.7",
     "postcss": "8.4.23",
     "prettier": "^3.7.4",
     "tailwindcss": "3.3.2",
