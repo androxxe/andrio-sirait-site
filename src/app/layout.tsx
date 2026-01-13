@@ -8,17 +8,62 @@ import Script from "next/script";
 const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `${profile.name}`,
-  description: `${profile.name} Personal Website`,
+  title: {
+    default: `${profile.name} - ${profile.role}`,
+    template: `%s | ${profile.name}`,
+  },
+  description: profile.about,
+  keywords: ['Full-stack Developer', 'Web Developer', 'Mobile Developer', 'TypeScript', 'React', 'Next.js', 'Portfolio'],
+  authors: [{ name: profile.name, url: `https://${profile.website}` }],
+  creator: profile.name,
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: `https://${profile.website}`,
+    title: `${profile.name} - ${profile.role}`,
+    description: profile.about,
+    siteName: profile.name,
+    images: [
+      {
+        url: `https://${profile.website}${profile.photo_path}`,
+        width: 1200,
+        height: 630,
+        alt: profile.name,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${profile.name} - ${profile.role}`,
+    description: profile.about,
+    images: [`https://${profile.website}${profile.photo_path}`],
+    creator: '@andriosirait',
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode; menu: string }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const UMAMI_URL = process.env.UMAMI_URL;
   const UMAMI_WEBSITE_ID = process.env.UMAMI_WEBSITE_ID;
 
   return (
     <html lang="en">
-      <Script defer src={UMAMI_URL} data-website-id={UMAMI_WEBSITE_ID}></Script>
+      {UMAMI_URL && UMAMI_WEBSITE_ID && <Script defer src={UMAMI_URL} data-website-id={UMAMI_WEBSITE_ID}></Script>}
       <body className={plusJakartaSans.className}>
         <main className="bg-background p-3 md:p-10 lg:h-screen">
           <div className="bg-gray-50 rounded-lg lg:h-full relative flex flex-col lg:flex-row justify-start items-start">
