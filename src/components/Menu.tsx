@@ -19,10 +19,6 @@ const menuList: IMenuList[] = [
     name: "Portfolio",
     route: "/portfolio",
   },
-  {
-    name: "Contact",
-    route: "/contact",
-  },
 ];
 
 type ActiveType = (typeof menuList)[number]["route"];
