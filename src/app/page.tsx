@@ -3,8 +3,6 @@
 import { Template } from "../components";
 import { profile } from "@/data";
 import { AnimatePresence, motion } from "framer-motion";
-import { useEffect } from "react";
-import { FaDownload } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 
 const Home = () => {
@@ -27,16 +25,6 @@ const Home = () => {
               />
             ) : null}
             <p className="mt-10 mb-20 mx-0 md:mx-4 lg:mx-10 text-center">{profile.about}</p>
-            <a
-              data-umami-event="[BUTTON] Download Resume"
-              target="_blank"
-              rel="noreferrer"
-              href={"/api/resume/download"}
-              className="flex gap-x-3 mt-0 items-center bg-primary-500 hover:bg-primary-700 px-5 py-3 text-white rounded-full text-sm"
-            >
-              <FaDownload />
-              Download Resume
-            </a>
           </div>
         </motion.div>
       </AnimatePresence>
