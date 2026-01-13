@@ -9,15 +9,4 @@ import Title from "./typography/Title";
 import Education from "./Education";
 import Portfolio from "./Portfolio";
 
-export {
-  SidebarProfile,
-  Menu,
-  Footer,
-  Template,
-  Services,
-  Skill,
-  Experience,
-  Title,
-  Education,
-  Portfolio,
-};
+export { SidebarProfile, Menu, Footer, Template, Services, Skill, Experience, Title, Education, Portfolio };

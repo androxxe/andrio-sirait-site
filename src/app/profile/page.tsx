@@ -40,7 +40,12 @@ const ProfilePage = (): JSX.Element => {
   return (
     <Template menu="/profile">
       <AnimatePresence mode="wait">
-        <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: -10, opacity: 0 }} transition={{ duration: 0.2 }}>
+        <motion.div
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -10, opacity: 0 }}
+          transition={{ duration: 0.2 }}
+        >
           <Title>About Me</Title>
           <table className="table-fixed mt-5 mx-auto">
             <tbody>

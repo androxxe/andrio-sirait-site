@@ -32,14 +32,10 @@ const Experience = (props: TExperience) => {
           key={`working_date_${experience.company}_${index}`}
         >
           <span>
-            {dayjs(
-              `${working_date.start_year}-${working_date.start_month}-01`
-            ).format("MMM YYYY")}
+            {dayjs(`${working_date.start_year}-${working_date.start_month}-01`).format("MMM YYYY")}
             {" - "}
             {working_date.end_month && working_date.end_year
-              ? dayjs(
-                  `${working_date.start_year}-${working_date.start_month}-01`
-                ).format("MMM YYYY")
+              ? dayjs(`${working_date.start_year}-${working_date.start_month}-01`).format("MMM YYYY")
               : "Now"}
           </span>
           <RxDotFilled className="text-sm inline-block text-primary-600" />
@@ -49,9 +45,7 @@ const Experience = (props: TExperience) => {
       <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900">
         {experience.company} - {experience.position}
       </h3>
-      <p className="mb-4 text-sm font-normal text-gray-500">
-        {experience.description}{" "}
-      </p>
+      <p className="mb-4 text-sm font-normal text-gray-500">{experience.description} </p>
     </li>
   );
 };

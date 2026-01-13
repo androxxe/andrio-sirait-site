@@ -75,7 +75,10 @@ const PortfolioDetail = ({ params: { slug } }: PortfolioDetailType) => {
         <p className="my-10 text-justify">{portfolio?.description ?? "No Description"}</p>
         <div className="space-x-2 mb-10">
           {portfolio?.platform.map((platform: string, index: number) => (
-            <span key={`portfolio_platform_${index}`} className="bg-slate-200 px-3 text-slate-500 py-1 rounded-full font-bold">
+            <span
+              key={`portfolio_platform_${index}`}
+              className="bg-slate-200 px-3 text-slate-500 py-1 rounded-full font-bold"
+            >
               {platform}
             </span>
           ))}
@@ -110,7 +113,15 @@ const PortfolioDetail = ({ params: { slug } }: PortfolioDetailType) => {
                 return (
                   <div className="space-y-2" key={`portfolio_technology_${index}`}>
                     <div className="w-full h-6 relative overflow-hidden">
-                      <Image className="object-contain" src={technology.logo_path} fill quality={80} loading="lazy" alt={`Tech stack ${technology.name}`} content="fill" />
+                      <Image
+                        className="object-contain"
+                        src={technology.logo_path}
+                        fill
+                        quality={80}
+                        loading="lazy"
+                        alt={`Tech stack ${technology.name}`}
+                        content="fill"
+                      />
                     </div>
                     <div className="text-sm text-slate-500 text-center">{technology.name}</div>
                   </div>

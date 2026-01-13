@@ -9,9 +9,7 @@ type LayoutProps = {
   };
 };
 
-export async function generateMetadata({
-  params: { slug },
-}: LayoutProps): Promise<Metadata> {
+export async function generateMetadata({ params: { slug } }: LayoutProps): Promise<Metadata> {
   const portfolio = portfolios.find((item) => item.slug === slug);
 
   return {

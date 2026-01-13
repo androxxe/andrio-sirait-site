@@ -47,7 +47,13 @@ export default function PortfolioPage() {
   return (
     <Template menu="/portfolio">
       <AnimatePresence mode="wait">
-        <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: -10, opacity: 0 }} transition={{ duration: 0.2 }} className="overflow-y-hidden w-full h-full">
+        <motion.div
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -10, opacity: 0 }}
+          transition={{ duration: 0.2 }}
+          className="overflow-y-hidden w-full h-full"
+        >
           <div className="lg:grid lg:grid-cols-12 gap-6 h-full">
             <div className="col-span-2 relative overflow-y-auto">
               <SidebarTechStack selectedPlatforms={selectedPlatforms} selectedTechnologies={selectedTechnologies} />
@@ -146,8 +152,12 @@ const SidebarTechStack = (props: TSidebarTechStack) => {
                   key={`technology_${index}_${technology_index}`}
                   className={cn(
                     `block w-full text-left duration-200 hover:scale-[90%] hover:border-primary-600 hover:text-primary-600 px-2 py-1 text-sm border cursor-pointer rounded-lg pointer`,
-                    selectedTechnologies.find((item) => item === technology.code) ? "border-primary-600 text-primary-600" : "text-slate-600",
-                    selectedPlatforms.find((item) => item === technology.code) ? "border-primary-600 text-primary-600" : "text-slate-600"
+                    selectedTechnologies.find((item) => item === technology.code)
+                      ? "border-primary-600 text-primary-600"
+                      : "text-slate-600",
+                    selectedPlatforms.find((item) => item === technology.code)
+                      ? "border-primary-600 text-primary-600"
+                      : "text-slate-600"
                   )}
                   onClick={() => handleFilter(technology.code, technology.type)}
                 >

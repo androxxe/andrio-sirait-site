@@ -8,12 +8,7 @@ type SkillType = {
   is_expertise?: boolean;
 };
 
-const Skill = ({
-  src,
-  name,
-  level,
-  is_expertise,
-}: SkillType): JSX.Element | null => {
+const Skill = ({ src, name, level, is_expertise }: SkillType): JSX.Element | null => {
   return (
     <div
       className={`w-[calc(50%-2.5rem)] lg:w-[calc(25%-2.5rem)] h-44 flex flex-col rounded relative ${
@@ -27,13 +22,7 @@ const Skill = ({
         </div>
       )}
       <div className="flex justify-center items-center flex-1 bg-slate-100 rounded">
-        <Image
-          alt={name}
-          src={src}
-          width={50}
-          height={50}
-          className="rounded-lg"
-        />
+        <Image alt={name} src={src} width={50} height={50} className="rounded-lg" />
       </div>
       <div className="text-center bg-slate-200 py-3 rounded">
         <p className="text-slate-800">{name}</p>
