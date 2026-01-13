@@ -8,5 +8,18 @@ import Experience from "./Experience";
 import Title from "./typography/Title";
 import Education from "./Education";
 import Portfolio from "./Portfolio";
+import PageTransition from "./PageTransition";
 
-export { SidebarProfile, Menu, Footer, Template, Services, Skill, Experience, Title, Education, Portfolio };
+export {
+  SidebarProfile,
+  Menu,
+  Footer,
+  Template,
+  Services,
+  Skill,
+  Experience,
+  Title,
+  Education,
+  Portfolio,
+  PageTransition,
+};

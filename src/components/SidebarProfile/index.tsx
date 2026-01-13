@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const Profile = (): JSX.Element => {
   return (
-    <div className="bg-neutral-500 h-full w-full lg:w-2/5 rounded-tl-lg rounded-bl-lg rounded-tr-lg lg:rounded-tr-none flex flex-col">
-      <div className="h-[240px] md:h-[420px] lg:flex-1 w-full px-8 pt-4 flex items-end overflow-hidden">
+    <div className="bg-neutral-600 h-full w-full lg:w-2/5 rounded-tl-lg rounded-bl-lg rounded-tr-lg lg:rounded-tr-none flex flex-col">
+      <div className="h-[240px] md:h-[420px] lg:flex-1 w-full px-4 xl:px-10 pt-4 flex items-end overflow-hidden">
         <div className="relative w-full h-full">
           <Image
             priority={true}

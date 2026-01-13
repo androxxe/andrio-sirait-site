@@ -3,8 +3,7 @@
 import React from "react";
 import { portfolios, technologies } from "@/data";
 import { FiAlertCircle } from "react-icons/fi";
-import { Portfolio, Template } from "@/components";
-import { AnimatePresence, motion } from "framer-motion";
+import { PageTransition, Portfolio, Template } from "@/components";
 import { useRouter, useSearchParams } from "next/navigation";
 import { cn, getUniqueValues } from "@/helpers";
 import qs, { ParsedQs } from "qs";
@@ -46,35 +45,35 @@ export default function PortfolioPage() {
 
   return (
     <Template menu="/portfolio">
-      <AnimatePresence mode="wait">
-        <motion.div
-          initial={{ y: 10, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -10, opacity: 0 }}
-          transition={{ duration: 0.2 }}
-          className="overflow-y-hidden w-full h-full"
-        >
-          <div className="lg:grid lg:grid-cols-12 gap-6 h-full">
-            <div className="col-span-2 relative overflow-y-auto">
-              <SidebarTechStack selectedPlatforms={selectedPlatforms} selectedTechnologies={selectedTechnologies} />
-            </div>
-            <div className="col-span-10 relative lg:overflow-y-auto flex flex-col">
-              {filteredPortfolio.length > 0 ? (
-                <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4 py-3 relative">
-                  {filteredPortfolio.map((portfolio, index) => (
-                    <Portfolio key={`portfolio_${index}`} portfolio={portfolio} />
-                  ))}
-                </div>
-              ) : (
-                <div className="flex items-center justify-center flex-col space-y-5 h-full">
-                  <FiAlertCircle className="text-5xl text-orange-400" />
-                  <div className="text-slate-400">No Projects Found</div>
-                </div>
-              )}
-            </div>
+      <PageTransition>
+        <div className="lg:grid lg:grid-cols-12 gap-6 h-full overflow-y-hidden">
+          <div className="col-span-2 relative overflow-y-auto">
+            <SidebarTechStack selectedPlatforms={selectedPlatforms} selectedTechnologies={selectedTechnologies} />
           </div>
-        </motion.div>
-      </AnimatePresence>
+          <div className="col-span-10 relative lg:overflow-y-auto flex flex-col">
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4 flex items-start gap-3">
+              <FiAlertCircle className="text-amber-600 text-xl flex-shrink-0 mt-0.5" />
+              <div className="text-sm text-amber-800">
+                <strong>Note:</strong> The projects showcased here are freelance and personal projects. Work done during
+                office hours remains proprietary to the respective companies.
+              </div>
+            </div>
+
+            {filteredPortfolio.length > 0 ? (
+              <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4 py-3 relative">
+                {filteredPortfolio.map((portfolio, index) => (
+                  <Portfolio key={`portfolio_${index}`} portfolio={portfolio} />
+                ))}
+              </div>
+            ) : (
+              <div className="flex items-center justify-center flex-col space-y-5 h-full">
+                <FiAlertCircle className="text-5xl text-orange-400" />
+                <div className="text-slate-400">No Projects Found</div>
+              </div>
+            )}
+          </div>
+        </div>
+      </PageTransition>
     </Template>
   );
 }
