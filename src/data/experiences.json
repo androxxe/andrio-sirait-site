@@ -1,14 +1,28 @@
 [
   {
     "company": "PT. Mitratech Indonesia",
+    "position": "Senior Software Engineer",
+    "description": "Mitra Tech Indonesia is a Leading Solution Provider & System Integrator that Focuses on Providing Comprehensive Solution to the Client to Answer Business Needs & Operational Challenges.",
+    "working_date": [
+      {
+        "start_month": 1,
+        "start_year": 2024,
+        "end_month": null,
+        "end_year": null,
+        "status": "Full-Time"
+      }
+    ]
+  },
+  {
+    "company": "PT. Mitratech Indonesia",
     "position": "Software Engineer",
     "description": "Mitra Tech Indonesia is a Leading Solution Provider & System Integrator that Focuses on Providing Comprehensive Solution to the Client to Answer Business Needs & Operational Challenges.",
     "working_date": [
       {
         "start_month": 11,
         "start_year": 2022,
-        "end_month": null,
-        "end_year": null,
+        "end_month": 12,
+        "end_year": 2023,
         "status": "Full-Time"
       }
     ]
@@ -45,20 +59,6 @@
         "end_month": 4,
         "end_year": 2021,
         "status": "Full-Time"
-      }
-    ]
-  },
-  {
-    "company": "Nginvite.com",
-    "position": "Co-Founder",
-    "description": "Nginvite is StartUp based on Pekanbaru, Nginvite is an online invitation based on web application with self-service concept which allow user to create and choose design for their invitation. Nginvite have some invitation type such as wedding, meeting, informal and formal events",
-    "working_date": [
-      {
-        "start_month": 10,
-        "start_year": 2021,
-        "end_month": 11,
-        "end_year": 2022,
-        "status": "Part-Time"
       }
     ]
   },
